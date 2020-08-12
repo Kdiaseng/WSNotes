@@ -13,7 +13,7 @@ data class Note(@Id
            @GeneratedValue
            @JsonProperty(value = "id", access = JsonProperty.Access.READ_ONLY)
            val id: Long =0L,
-           val title: String = "",
-           val description: String= "") {
+                var title: String = "",
+                var description: String= "") {
 
 }
